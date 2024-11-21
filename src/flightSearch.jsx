@@ -42,7 +42,7 @@ const FlightSearch = () => {
       const transformedFlights = data.data.itineraries.map((itinerary, index) => {
         const leg = itinerary.legs[0];
         const firstSegment = leg.segments[0];
-        const lastSegment = leg.segments[leg.segments.length - 1];
+        
 
         return {
           id: index + 1,
